@@ -89,6 +89,6 @@ Source: [https://www.pexels.com](https://www.pexels.com)
 ### 1.0
 
 * Initial release
-* Released: July 26, 2017
+* Released: August 9, 2017
 
 
