@@ -1,0 +1,14 @@
+<div id="locations" class="locations-container container">
+    <h2 class="text-center page-header" translate>OUR_OFFICES</h2>
+    <div class="row" ng-repeat="location in $ctrl.locations" ng-if="$index % 3 == 0">
+        <div class="location col-md-4">
+            <hl-location-item contact-data="{{$ctrl.locations[$index]}}" ></hl-location-item>
+        </div>
+        <div class="location col-md-4" ng-if="$ctrl.locations.length > ($index + 1)">
+            <hl-location-item contact-data="{{$ctrl.locations[$index + 1]}}" ></hl-location-item>
+        </div>
+        <div class="location col-md-4" ng-if="$ctrl.locations.length > ($index + 2)">
+            <hl-location-item contact-data="{{$ctrl.locations[$index + 2]}}" ></hl-location-item>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="company-statistics-container container">
+    <div class="row">
+        <div class="col-md-3 text-center" ng-repeat="statistics in $ctrl.statistics">
+            <hl-counter class="stat-value lead" aria-hidden="true" count-total="{{statistics.value}}" count-value="0">
+            </hl-counter>
+            <p class="stat-title">
+                <span class="sr-only">{{statistics.value}}</span>
+                {{statistics.title}}
+            </p>
+        </div>
+    </div>
+</div>

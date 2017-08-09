@@ -1,0 +1,9 @@
+[
+  {
+    "slug": "service-c",
+    "title": "Service C",
+    "category": "Service",
+    "description":    "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>",
+    "image": "../assets/stock-photos/pexels-photo-356043_300x300.jpg"
+  }
+]

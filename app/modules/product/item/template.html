@@ -1,0 +1,17 @@
+<div class="thumbnail text-center">
+    <img class="img-responsive img-circle" alt="" role="presentation" ng-src="{{$ctrl.image | trusted}}" />
+    <div class="caption">
+        <h2>
+            {{$ctrl.title}}
+        </h2>
+        <p>
+            {{$ctrl.snippet}}
+        </p>
+        <p>
+            <a ui-sref="product({ productSlug: $ctrl.slug })" class="btn btn-primary" role="button">
+                {{'READ_MORE' | translate}}
+                <span class="sr-only"> - {{$ctrl.title}}</span>
+            </a>
+        </p>
+    </div>
+</div>

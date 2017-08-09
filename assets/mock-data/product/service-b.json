@@ -1,0 +1,9 @@
+[
+  {
+    "slug": "service-b",
+    "title": "Service B",
+    "category": "Service",
+    "description":    "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>",
+    "image": "../assets/stock-photos/pexels-photo-239898_300x300.jpg"
+  }
+]

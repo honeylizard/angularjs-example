@@ -1,0 +1,16 @@
+<div class="thumbnail">
+    <img class="img-responsive" alt="" role="presentation" ng-src="{{$ctrl.photo | trusted}}" />
+    <div class="caption">
+        <h2>
+            {{$ctrl.name}}
+            <br>
+            <small>
+                {{$ctrl.jobTitle}}
+            </small>
+        </h2>
+        <div ng-bind-html="$ctrl.description"></div>
+        <p>
+            <hl-social-media-list social-media-data="{{$ctrl.socialMedia}}"></hl-social-media-list>
+        </p>
+    </div>
+</div>

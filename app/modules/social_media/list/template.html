@@ -1,0 +1,11 @@
+<div class="social-media-container">
+    <ul class="list-inline">
+        <li class="{{socialMedia.class}} social-media-link" ng-repeat="socialMedia in $ctrl.socialMediaList">
+            <a href="{{socialMedia.url}}" target="_blank">
+                <div ng-bind-html="socialMedia.icon"></div>
+                <span class="sr-only">{{socialMedia.site}}</span>
+                <span class="sr-only">{{'OPENS_IN_NEW_WINDOW' | translate}}</span>
+            </a>
+        </li>
+    </ul>
+</div>

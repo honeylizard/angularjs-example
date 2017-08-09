@@ -1,0 +1,96 @@
+<div class="contact">
+    <div class="jumbotron text-center">
+        <div class="container">
+            <div class="row">
+                <h1 translate>WERE_HERE_TO_HELP</h1>
+                <div ng-bind-html="hero_message"></div>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="{{productSupportURL}}" role="button" target="_blank">
+                        {{'PRODUCT_SUPPORT' | translate}}
+                        <span class="sr-only" translate>OPENS_IN_NEW_WINDOW</span>
+                        <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-content-container">
+        <div class="page-section breadcrumb-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li>
+                                <a ui-sref="base" ui-sref-active="active" translate>
+                                    HOME
+                                </a>
+                            </li>
+                            <li class="active" translate>
+                                CONTACT
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div ng-bind-html="description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-section">
+            <hl-location-list></hl-location-list>
+        </div>
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <form id="contactForm">
+                            <h2 class="text-center page-header" translate>HAVE_A_QUESTION</h2>
+                            <div class="form-group">
+                                <label for="name-field" translate>FORM_NAME</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+                                    </span>
+                                    <input type="text" id="name-field" name="name-field" class="form-control"
+                                           translate-attr="{ placeholder: 'PLACEHOLDER_NAME'}" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-field" translate>FORM_PHONE</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+                                    </span>
+                                    <input type="tel" id="phone-field" name="phone-field" class="form-control"
+                                           translate-attr="{ placeholder: 'PLACEHOLDER_PHONE'}"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-field" translate>FORM_EMAIL</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+                                    </span>
+                                    <input type="email" id="email-field" name="email-field" class="form-control"
+                                           translate-attr="{ placeholder: 'PLACEHOLDER_EMAIL'}" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message-field" translate>FORM_MESSAGE</label>
+                                <textarea rows="10" id="message-field" name="message-field"
+                                          class="form-control"></textarea>
+                            </div>
+                            <input type="submit" translate-attr="{ value: 'SEND_MESSAGE'}" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

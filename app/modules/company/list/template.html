@@ -1,0 +1,44 @@
+<div id="{{$ctrl.id}}" class="{{$ctrl.id}}-container container">
+    <h2 class="text-center">
+        {{$ctrl.title}}
+    </h2>
+    <div class="row company-row"
+         ng-repeat="company in $ctrl.companies track by company.name" ng-if="$index % 6 == 0">
+        <div class="{{$ctrl.itemClass}} col-md-2">
+            <hl-company-item
+                    company-logo="$ctrl.companies[$index].logo"
+                    company-name="$ctrl.companies[$index].name">
+            </hl-company-item>
+        </div>
+        <div class="{{$ctrl.itemClass}} col-md-2" ng-if="$ctrl.companies.length > ($index + 1)">
+            <hl-company-item
+                    company-logo="$ctrl.companies[$index + 1].logo"
+                    company-name="$ctrl.companies[$index + 1].name">
+            </hl-company-item>
+        </div>
+        <div class="{{$ctrl.itemClass}} col-md-2" ng-if="$ctrl.companies.length > ($index + 2)">
+            <hl-company-item
+                    company-logo="$ctrl.companies[$index + 2].logo"
+                    company-name="$ctrl.companies[$index + 2].name">
+            </hl-company-item>
+        </div>
+        <div class="{{$ctrl.itemClass}} col-md-2" ng-if="$ctrl.companies.length > ($index + 3)">
+            <hl-company-item
+                    company-logo="$ctrl.companies[$index + 3].logo"
+                    company-name="$ctrl.companies[$index + 3].name">
+            </hl-company-item>
+        </div>
+        <div class="{{$ctrl.itemClass}} col-md-2" ng-if="$ctrl.companies.length > ($index + 4)">
+            <hl-company-item
+                    company-logo="$ctrl.companies[$index + 4].logo"
+                    company-name="$ctrl.companies[$index + 4].name">
+            </hl-company-item>
+        </div>
+        <div class="{{$ctrl.itemClass}} col-md-2" ng-if="$ctrl.companies.length > ($index + 5)">
+            <hl-company-item
+                    company-logo="$ctrl.companies[$index + 5].logo"
+                    company-name="$ctrl.companies[$index + 5].name">
+            </hl-company-item>
+        </div>
+    </div>
+</div>

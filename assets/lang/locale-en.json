@@ -1,0 +1,121 @@
+{
+  "ENGLISH":  "English",
+
+  "SKIP_TO_CONTENT": "Skip to Content",
+  "OPENS_IN_NEW_WINDOW": "Opens in new window",
+
+  "READ_MORE": "Read More",
+  "LEARN_MORE": "Learn More",
+  "BACK_TO_HOME": "Back to Home",
+  "PRODUCT_SUPPORT":  "Product Support",
+
+  "PREVIOUS": "Previous",
+  "NEXT": "Next",
+  "PAGE": "Page",
+
+  "NAVIGATION": "Navigation",
+  "TOGGLE_NAVIGATION": "Toggle Navigation",
+  "PRIVACY_POLICY": "Privacy Policy",
+  "TERMS_OF_USE": "Terms of Use",
+  "TERMS_CONDITIONS": "Terms & Conditions",
+
+  "HOME": "Home",
+  "PRODUCTS": "Products",
+  "SERVICES": "Services",
+  "ABOUT": "About",
+  "CONTACT": "Contact",
+  "COMPANY": "Company",
+  "CAREERS": "Careers",
+
+  "ABOUT_US":   "About Us",
+  "CONTACT_US": "Contact Us",
+
+  "OUR_TEAM":         "Our Team",
+  "OUR_CUSTOMERS":    "Our Customers",
+  "OUR_PARTNERS":     "Our Partners",
+  "OUR_OFFICES":      "Our Offices",
+  "OUR_PRODUCTS":     "Our Products",
+  "OUR_COMPANY":      "Our Company",
+  "OUR_MISSION":      "Our Mission",
+  "OUR_PASSION":      "Our Passion",
+
+  "WERE_HERE_TO_HELP": "We're Here to Help!",
+  "HAVE_A_QUESTION":  "Have a question?",
+
+  "NEED_MORE_DETAILS": "Need more details?",
+  "CONTACT_CTA_BODY": "We are here to assist. Contact us by phone, email or via our Social Media channels.",
+
+  "STAY_IN_TOUCH": "Stay In Touch",
+  "NEWSLETTER_CTA_BODY": "Subscribe for email updates on our News & Offers",
+
+  "GOOGLE_MAP_IFRAME_TITLE": "Google Maps - Map of Location",
+
+  "LATEST_POSTS": "Latest Posts",
+  "LATEST_COMMENTS": "Latest Comments",
+  "LATEST_NEWS_EVENTS": "Latest News & Events",
+
+  "WELCOME": "Welcome",
+  "WHY_PEOPLE_CHOOSE_US": "Why People Choose Us",
+  "WHAT_PEOPLE_SAY_ABOUT_US": "What People Say About Us",
+
+  "FEATURES": "Features",
+
+  "NEWEST": "Newest",
+  "OLDEST": "Oldest",
+
+  "TITLE_A_Z": "Title (A-Z)",
+  "TITLE_Z_A": "Title (Z-A)",
+
+  "CATEGORY_A_Z": "Category (A-Z)",
+  "CATEGORY_Z_A": "Category (Z-A)",
+
+  "TYPE_A_Z": "Type (A-Z)",
+  "TYPE_Z_A": "Type (Z-A)",
+
+  "SEND_MESSAGE":     "Send Message",
+  "SUBSCRIBE":        "Subscribe",
+
+  "SEARCH": "Search",
+  "PLACEHOLDER_SEARCH": "Search",
+
+  "FORM_NAME": "Name:",
+  "PLACEHOLDER_NAME": "Enter Name",
+
+  "FORM_EMAIL": "Email:",
+  "PLACEHOLDER_EMAIL": "Enter Email",
+
+  "FORM_PHONE": "Phone:",
+  "PLACEHOLDER_PHONE": "Enter Phone",
+
+  "FORM_MESSAGE": "Message:",
+
+  "ADDRESS": "Address",
+  "PHONE": "Phone",
+  "FAX": "Fax",
+  "EMAIL": "Email",
+  "OPERATING_HOURS": "Operating Hours",
+
+  "JOBS": "Jobs",
+  "LOCATION": "Location",
+  "EMPLOYMENT_TYPE": "Employment Type",
+  "CATEGORY": "Category",
+  "APPLY": "Apply",
+  "SORT_BY": "Sort by",
+  "NO_AVAILABLE_JOBS": "No Available Jobs",
+  "JOB_OPENINGS": "Job Openings",
+  "FILTER_JOBS": "Filter Jobs",
+
+  "VIEW_JOB_POSTING": "View Job Posting",
+  "JOBS_PER_PAGE": "Jobs per Page",
+  "LIST": "List",
+
+  "DATE_POSTED": "Date Posted",
+  "TITLE": "Title",
+  "DESCRIPTION": "Description",
+  "TYPE": "Type",
+  "ACTIONS": "Actions",
+
+  "BUY_NOW": "Buy Now",
+
+  "OOPS": "Oops!"
+}

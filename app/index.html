@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="exampleApp">
+	<head>
+		<meta charset="utf-8">
+		<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<![endif]-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Honey Lizard">
+		<meta name="copyright" content="2017 &copy; Honey Lizard">
+
+		<title ng-bind="$state.current.data.pageTitle">Angular - Example Application</title>
+
+		<link rel="stylesheet" href="../assets/libs/vendor/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../assets/libs/vendor/bootstrap/css/bootstrap-theme.min.css" />
+
+		<link rel="stylesheet" href="../assets/libs/vendor/font-awesome/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="style.css" />
+
+        <!-- TODO: Determine if needed for "Pretty" URLs -->
+        <!-- <base href="/angular/app/"> -->
+  	</head>
+  	<body>
+		<hl-header></hl-header>
+		<div id="content" class="content" role="main">
+            <ui-view>Loading...</ui-view>
+		</div>
+		<hl-footer></hl-footer>
+
+        <!-- jQuery -->
+        <script src="../assets/libs/vendor/jquery/jquery-3.1.1.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="../assets/libs/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- AngularJS -->
+		<script src="../assets/libs/vendor/angular-1.6.4/angular.min.js"></script>
+		<script src="../assets/libs/vendor/angular-1.6.4/angular-animate.min.js"></script>
+		<script src="../assets/libs/vendor/angular-1.6.4/angular-aria.min.js"></script>
+		<script src="../assets/libs/vendor/angular-1.6.4/angular-mocks.js"></script>
+		<script src="../assets/libs/vendor/angular-1.6.4/angular-resource.min.js"></script>
+		<script src="../assets/libs/vendor/angular-1.6.4/angular-route.min.js"></script>
+
+        <!-- Angular Translate -->
+		<script src="../assets/libs/vendor/pascalprecht/angular-translate.min.js"></script>
+		<script src="../assets/libs/vendor/pascalprecht/angular-translate-loader-static-files.min.js"></script>
+		<script src="../assets/libs/vendor/pascalprecht/angular-translate-interpolation-messageformat.min.js"></script>
+
+        <!-- Angular UI Router -->
+        <script src="../assets/libs/vendor/ui-router/angular-ui-router.min.js"></script>
+
+		<script src="app.module.js"></script>
+		<script src="app.routes.js"></script>
+
+        <!-- Core Module -->
+		<script src="core/core.module.js"></script>
+        <script src="core/trusted.filter.js"></script>
+
+        <!-- Core - Template - Header Module -->
+        <script src="core/template/header/module.js"></script>
+        <script src="core/template/header/component.js"></script>
+        <script src="core/template/header/controller.js"></script>
+
+        <!-- Core - Template - Footer Module -->
+        <script src="core/template/footer/module.js"></script>
+        <script src="core/template/footer/component.js"></script>
+        <script src="core/template/footer/controller.js"></script>
+
+        <!-- Core - Number Counter Module -->
+        <script src="core/modules/counter/module.js"></script>
+        <script src="core/modules/counter/component.js"></script>
+        <script src="core/modules/counter/controller.js"></script>
+
+        <!-- Core - Call To Action - Contact Us Module -->
+        <script src="core/modules/call_to_action/contact/module.js"></script>
+        <script src="core/modules/call_to_action/contact/component.js"></script>
+        <script src="core/modules/call_to_action/contact/controller.js"></script>
+
+        <!-- Core - Call To Action - Newsletter Module -->
+        <script src="core/modules/call_to_action/newsletter/module.js"></script>
+        <script src="core/modules/call_to_action/newsletter/component.js"></script>
+        <script src="core/modules/call_to_action/newsletter/controller.js"></script>
+
+        <!-- Pages Module -->
+        <script src="pages/pages.module.js"></script>
+
+        <!-- Pages - Home Module -->
+        <script src="pages/home/module.js"></script>
+        <script src="pages/home/component.js"></script>
+        <script src="pages/home/controller.js"></script>
+
+        <!-- Pages - About Module -->
+        <script src="pages/about/module.js"></script>
+        <script src="pages/about/component.js"></script>
+        <script src="pages/about/controller.js"></script>
+
+        <!-- Pages - Careers Module -->
+        <script src="pages/careers/module.js"></script>
+        <script src="pages/careers/component.js"></script>
+        <script src="pages/careers/controller.js"></script>
+
+        <!-- Pages - Contact Module -->
+        <script src="pages/contact/module.js"></script>
+        <script src="pages/contact/component.js"></script>
+        <script src="pages/contact/controller.js"></script>
+
+        <!-- Pages - Products Module -->
+        <script src="pages/products/module.js"></script>
+        <script src="pages/products/component.js"></script>
+        <script src="pages/products/controller.js"></script>
+
+        <!-- Pages - Error Module -->
+        <script src="pages/error/module.js"></script>
+        <script src="pages/error/component.js"></script>
+        <script src="pages/error/controller.js"></script>
+
+        <!-- Pages - Privacy Policy Module -->
+        <script src="pages/privacy_policy/module.js"></script>
+        <script src="pages/privacy_policy/component.js"></script>
+        <script src="pages/privacy_policy/controller.js"></script>
+
+        <!-- Pages - Terms & Conditions Module -->
+        <script src="pages/terms_conditions/module.js"></script>
+        <script src="pages/terms_conditions/component.js"></script>
+        <script src="pages/terms_conditions/controller.js"></script>
+
+        <!-- Company Statistics Module -->
+        <script src="modules/statistics/service.js"></script>
+        <script src="modules/statistics/module.js"></script>
+        <script src="modules/statistics/component.js"></script>
+        <script src="modules/statistics/controller.js"></script>
+
+        <!-- Other Companies Module -->
+        <script src="modules/company/service.js"></script>
+        <script src="modules/company/customers.service.js"></script>
+        <script src="modules/company/partners.service.js"></script>
+        <script src="modules/company/list/module.js"></script>
+        <script src="modules/company/list/component.js"></script>
+        <script src="modules/company/list/controller.js"></script>
+        <script src="modules/company/item/module.js"></script>
+		<script src="modules/company/item/component.js"></script>
+        <script src="modules/company/item/controller.js"></script>
+
+        <!-- Company Office/Location Module -->
+        <script src="modules/location/service.js"></script>
+        <script src="modules/location/list/module.js"></script>
+        <script src="modules/location/list/component.js"></script>
+        <script src="modules/location/list/controller.js"></script>
+        <script src="modules/location/item/module.js"></script>
+        <script src="modules/location/item/component.js"></script>
+        <script src="modules/location/item/controller.js"></script>
+
+        <!-- Client Testimonials Module -->
+        <script src="modules/testimonial/service.js"></script>
+        <script src="modules/testimonial/list/module.js"></script>
+        <script src="modules/testimonial/list/component.js"></script>
+        <script src="modules/testimonial/list/controller.js"></script>
+
+        <!-- Company Employees/Team Module -->
+        <script src="modules/team/service.js"></script>
+        <script src="modules/team/list/module.js"></script>
+        <script src="modules/team/list/component.js"></script>
+        <script src="modules/team/list/controller.js"></script>
+        <script src="modules/team/item/module.js"></script>
+        <script src="modules/team/item/component.js"></script>
+        <script src="modules/team/item/controller.js"></script>
+
+        <!-- Social Media Module -->
+        <script src="modules/social_media/list/module.js"></script>
+        <script src="modules/social_media/list/component.js"></script>
+        <script src="modules/social_media/list/controller.js"></script>
+
+        <!-- Company Products & Services Module -->
+        <script src="modules/product/service.js"></script>
+        <script src="modules/product/list.service.js"></script>
+        <script src="modules/product/detail.service.js"></script>
+        <script src="modules/product/list/module.js"></script>
+        <script src="modules/product/list/component.js"></script>
+        <script src="modules/product/list/controller.js"></script>
+        <script src="modules/product/item/module.js"></script>
+        <script src="modules/product/item/component.js"></script>
+        <script src="modules/product/item/controller.js"></script>
+        <script src="modules/product/detail/module.js"></script>
+        <script src="modules/product/detail/component.js"></script>
+        <script src="modules/product/detail/controller.js"></script>
+
+        <!-- Company Job Postings Module -->
+        <script src="modules/job/service.js"></script>
+        <script src="modules/job/list.service.js"></script>
+        <script src="modules/job/detail.service.js"></script>
+        <script src="modules/job/list/module.js"></script>
+        <script src="modules/job/list/component.js"></script>
+        <script src="modules/job/list/controller.js"></script>
+        <script src="modules/job/detail/module.js"></script>
+        <script src="modules/job/detail/component.js"></script>
+        <script src="modules/job/detail/controller.js"></script>
+
+        <script src="script.js"></script>
+  	</body>
+</html>

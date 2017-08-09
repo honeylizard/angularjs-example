@@ -1,0 +1,48 @@
+[
+  {
+    "googleMapUrl":   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.0753142646754!2d-84.38673448512172!3d33.62928914734798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fdb23d752137%3A0x497cd4d734b553f6!2s123+Main+St%2C+Forest+Park%2C+GA+30297!5e0!3m2!1sen!2sus!4v1501090068607",
+    "image":          "../assets/stock-photos/pexels-photo_300x300.jpg",
+    "name":           "Headquarters",
+    "streetNumber":   "123",
+    "street":         "Main Street",
+    "city":           "Atlanta",
+    "state":          "GA",
+    "postCode":       "30055",
+    "phone":          "770-555-5555",
+    "fax":            "678-555-5555",
+    "email":          "info@example.com",
+    "socialMedia":    {
+      "facebook":     "http://facebook.example.com",
+      "linkedin":     "http://linkedin.example.com",
+      "twitter":      "http://twitter.example.com",
+      "pinterest":    "http://pinterest.example.com",
+      "youtube":      "http://youtube.example.com"
+    }
+  },
+  {
+    "googleMapUrl":   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.0753142646754!2d-84.38673448512172!3d33.62928914734798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fdb23d752137%3A0x497cd4d734b553f6!2s123+Main+St%2C+Forest+Park%2C+GA+30297!5e0!3m2!1sen!2sus!4v1501090068607",
+    "image":          "../assets/stock-photos/pexels-photo-378570_300x300.jpg",
+    "name":           "Alternative Office A",
+    "streetNumber":   "456",
+    "street":         "North Street",
+    "city":           "Canton",
+    "state":          "GA",
+    "postCode":       "30055",
+    "phone":          "770-555-5555",
+    "fax":            "678-555-5555",
+    "email":          "info@example.com"
+  },
+  {
+    "googleMapUrl":   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.0753142646754!2d-84.38673448512172!3d33.62928914734798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fdb23d752137%3A0x497cd4d734b553f6!2s123+Main+St%2C+Forest+Park%2C+GA+30297!5e0!3m2!1sen!2sus!4v1501090068607",
+    "image":          "../assets/stock-photos/pexels-photo-534757_300x300.jpg",
+    "name":           "Alternative Office B",
+    "streetNumber":   "890",
+    "street":         "East Avenue",
+    "city":           "San Francisco",
+    "state":          "CA",
+    "postCode":       "30055",
+    "phone":          "770-555-5555",
+    "fax":            "678-555-5555",
+    "email":          "info@example.com"
+  }
+]

@@ -1,0 +1,43 @@
+<div class="products">
+    <div class="jumbotron text-center">
+        <div class="container">
+            <div class="row">
+                <h1 translate>PRODUCTS</h1>
+                <div ng-bind-html="hero_message"></div>
+            </div>
+        </div>
+    </div>
+    <div class="products-content-container">
+        <div class="page-section breadcrumb-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li>
+                                <a ui-sref="base" ui-sref-active="active" translate>
+                                    HOME
+                                </a>
+                            </li>
+                            <li class="active" translate>
+                                PRODUCTS
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div ng-bind-html="description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-section">
+            <hl-product-list></hl-product-list>
+        </div>
+        <hl-contact-cta></hl-contact-cta>
+    </div>
+</div>

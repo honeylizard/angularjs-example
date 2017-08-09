@@ -1,0 +1,16 @@
+<div id="products" class="container products-container">
+    <h2 class="text-center page-header" translate>
+        OUR_PRODUCTS
+    </h2>
+    <div class="row" ng-repeat="product in $ctrl.products" ng-if="$index % 3 == 0">
+        <div class="{{$ctrl.itemClass}} col-md-4">
+            <hl-product-item product-data="{{$ctrl.products[$index]}}" ></hl-product-item>
+        </div>
+        <div class="{{$ctrl.itemClass}} col-md-4" ng-if="$ctrl.products.length > ($index + 1)">
+            <hl-product-item product-data="{{$ctrl.products[$index + 1]}}" ></hl-product-item>
+        </div>
+        <div class="{{$ctrl.itemClass}} col-md-4" ng-if="$ctrl.products.length > ($index + 2)">
+            <hl-product-item product-data="{{$ctrl.products[$index + 2]}}" ></hl-product-item>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 0,
+    "slug": "software-engineer",
+    "title": "Software Engineer",
+    "location": "Atlanta, GA",
+    "type": "Full-Time",
+    "category": "Technology",
+    "snippet": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime."
+  },
+  {
+    "id": 1,
+    "slug": "senior-software-engineer",
+    "title": "Senior Software Engineer",
+    "location": "Atlanta, GA",
+    "type": "Full-Time",
+    "category": "Information Technology",
+    "snippet": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime."
+  },
+  {
+    "id": 2,
+    "slug": "technical-support",
+    "title": "Technical Support",
+    "location": "Atlanta, GA",
+    "type": "Part-Time",
+    "category": "Support",
+    "snippet": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime."
+  },
+  {
+    "id": 3,
+    "slug": "sales-representative",
+    "title": "Sales Representative",
+    "location": "Alpharetta, GA",
+    "type": "Full-Time",
+    "category": "Sales & Marketing",
+    "snippet": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime."
+  },
+  {
+    "id": 4,
+    "slug": "accounts-receivable-associate",
+    "title": "Accounts Receivable Associate",
+    "location": "Alpharetta, GA",
+    "type": "Full-Time",
+    "category": "Finance",
+    "snippet": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime."
+  },
+  {
+    "id": 5,
+    "slug": "accounts-payable-associate",
+    "title": "Accounts Payable Associate",
+    "location": "Alpharetta, GA",
+    "type": "Full-Time",
+    "category": "Finance",
+    "snippet": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime."
+  },
+  {
+    "id": 6,
+    "slug": "store-associate",
+    "title": "Store Associate",
+    "location": "Canton, GA",
+    "type": "Part-Time",
+    "category": "Finance",
+    "snippet": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime."
+  }
+]

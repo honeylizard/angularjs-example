@@ -1,0 +1,9 @@
+[
+  {
+    "slug": "product-b",
+    "title": "Product B",
+    "category": "Product",
+    "description":    "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>",
+    "image": "../assets/stock-photos/pexels-photo-454507_300x300.jpg"
+  }
+]

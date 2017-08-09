@@ -1,0 +1,50 @@
+<div class="product">
+    <div class="jumbotron text-center">
+        <div class="container">
+            <div class="row">
+                <h1 translate>PRODUCTS</h1>
+            </div>
+        </div>
+    </div>
+    <div class="product-content-container">
+        <div class="page-section breadcrumb-section">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a ui-sref="base" ui-sref-active="active" translate>
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="products" ui-sref-active="active" translate>
+                                PRODUCTS
+                            </a>
+                        </li>
+                        <li class="active">
+                            {{product.title}}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">{{product.title}}</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-responsive" alt="" role="presentation" ng-src="{{product.image | trusted}}" />
+                    </div>
+                    <div class="col-md-8">
+                        <div ng-bind-html="description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hl-contact-cta></hl-contact-cta>
+    </div>
+</div>

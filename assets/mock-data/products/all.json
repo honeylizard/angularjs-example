@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "service-a",
+    "title": "Service A",
+    "category": "Service",
+    "snippet":    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.",
+    "image": "../assets/stock-photos/pexels-photo-296883_300x300.jpg"
+  },
+  {
+    "slug": "service-b",
+    "title": "Service B",
+    "category": "Service",
+    "snippet":    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.",
+    "image": "../assets/stock-photos/pexels-photo-239898_300x300.jpg"
+  },
+  {
+    "slug": "service-c",
+    "title": "Service C",
+    "category": "Service",
+    "snippet":    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.",
+    "image": "../assets/stock-photos/pexels-photo-356043_300x300.jpg"
+  },
+  {
+    "slug": "product-a",
+    "title": "Product A",
+    "category": "Product",
+    "snippet":    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.",
+    "image": "../assets/stock-photos/pexels-photo-324030_300x300.jpg"
+  },
+  {
+    "slug": "product-b",
+    "title": "Product B",
+    "category": "Product",
+    "snippet":    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.",
+    "image": "../assets/stock-photos/pexels-photo-454507_300x300.jpg"
+  },
+  {
+    "slug": "product-c",
+    "title": "Product C",
+    "category": "Product",
+    "snippet":    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.",
+    "image": "../assets/stock-photos/pexels-photo-357514_300x300.jpg"
+  }
+]

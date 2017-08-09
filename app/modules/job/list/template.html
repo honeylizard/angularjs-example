@@ -1,0 +1,112 @@
+<div class="container">
+    <h2 translate>JOB_OPENINGS</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <h3 translate>FILTER_JOBS</h3>
+            <form id="jobListForm" role="form">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <strong>{{'EMPLOYMENT_TYPE' | translate}}:</strong>
+                        <br/>
+                        <div ng-repeat="type in employmentTypes" class="checkbox-inline">
+                            <label for="job-type-{{type.slug}}" class="checkbox-inline">
+                                <input id="job-type-{{type.slug}}" name="job-type" type="checkbox"
+                                       ng-model="type.toggle" >
+                                {{type.name}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <strong>{{'CATEGORY' | translate}}:</strong>
+                        <br/>
+                        <div ng-repeat="category in categories" class="checkbox-inline">
+                            <label for="job-category-{{category.slug}}" class="checkbox-inline">
+                                <input id="job-category-{{category.slug}}" name="job-category" type="checkbox"
+                                       ng-model="category.toggle" >
+                                {{category.name}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="job-search">{{'SEARCH' | translate}}:</label>
+                        <input type="search" id="job-search" name="job-search" class="form-control"
+                               ng-model="$ctrl.query" translate-attr="{ placeholder: 'SEARCH'}" />
+                    </div>
+                    <div class="form-group">
+                        <label for="job-sort">{{'SORT_BY' | translate}}:</label>
+                        <select id="job-sort" name="job-sort" class="form-control" ng-model="$ctrl.orderProp">
+                            <option value="id" translate>NEWEST</option>
+                            <option value="-id" translate>OLDEST</option>
+                            <option value="title" translate>TITLE_A_Z</option>
+                            <option value="-title" translate>TITLE_Z_A</option>
+                            <option value="type" translate>TYPE_A_Z</option>
+                            <option value="-type" translate>TYPE_Z_A</option>
+                            <option value="category" translate>CATEGORY_A_Z</option>
+                            <option value="-category" translate>CATEGORY_Z_A</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="btn btn-primary" translate-attr="{ value: 'FILTER_JOBS'}">
+                &nbsp;</div>
+            </form>
+        </div>
+        <div class="row">
+            <h3 translate>LIST</h3>
+            <table class="table table-striped table-bordered">
+                <tr>
+                    <th translate>
+                        DATE_POSTED
+                    </th>
+                    <th translate>
+                        TITLE
+                    </th>
+                    <th translate>
+                        TYPE
+                    </th>
+                    <th translate>
+                        CATEGORY
+                    </th>
+                    <th translate>
+                        DESCRIPTION
+                    </th>
+                    <th>
+                        <span class="sr-only" translate>ACTIONS</span>
+                    </th>
+                </tr>
+                <tr ng-repeat="job in listItems | orderBy: $ctrl.orderProp | filter: $ctrl.categoryFilter | filter: $ctrl.employmentTypeFilter | filter: $ctrl.query as filtered">
+                    <td>
+                        <p>{{job.id}}</p>
+                    </td>
+                    <td>
+                        <p>{{job.title}}</p>
+                    </td>
+                    <td>
+                        <p>{{job.type}}</p>
+                    </td>
+                    <td>
+                        <p>{{job.category}}</p>
+                    </td>
+                    <td>
+                        <p>{{job.snippet}}</p>
+                    </td>
+                    <td>
+                        <p>
+                            <a ui-sref="job-posting({ jobSlug: job.slug })" translate>
+                                VIEW_JOB_POSTING
+                            </a>
+                        </p>
+                    </td>
+                </tr>
+                <tr ng-if="filtered.length === 0">
+                    <td colspan="6" >
+                        <div class=text-center" translate>
+                            NO_AVAILABLE_JOBS
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+

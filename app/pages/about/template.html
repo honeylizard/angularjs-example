@@ -1,0 +1,58 @@
+<div class="about">
+    <div class="jumbotron text-center">
+        <div class="container">
+            <div class="row">
+                <h1 translate>ABOUT</h1>
+                <div ng-bind-html="hero_message"></div>
+            </div>
+        </div>
+    </div>
+    <div class="about-content-container">
+        <div class="page-section breadcrumb-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li>
+                                <a ui-sref="base" ui-sref-active="active" translate>
+                                    HOME
+                                </a>
+                            </li>
+                            <li class="active" translate>
+                                ABOUT
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="page-header text-center" translate>OUR_COMPANY</h2>
+                        <div ng-bind-html="company_description"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="page-header text-center" translate>OUR_MISSION</h2>
+                        <div ng-bind-html="company_mission"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="page-header text-center" translate>OUR_PASSION</h2>
+                        <div ng-bind-html="company_passion"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-section">
+            <hl-company-statistics></hl-company-statistics>
+        </div>
+        <div class="page-section">
+            <hl-company-list list-type="partners"></hl-company-list>
+        </div>
+        <div class="page-section">
+            <hl-team-list></hl-team-list>
+        </div>
+        <hl-contact-cta></hl-contact-cta>
+    </div>
+</div>

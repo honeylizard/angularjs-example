@@ -1,0 +1,41 @@
+[
+  {
+    "photo":          "http://i.pravatar.cc/350?img=13",
+    "name":           "John Smith",
+    "title":          "Job Title A",
+    "description":    "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>",
+    "socialMedia":    {
+      "facebook":   "http://facebook.example.com",
+      "linkedin":    "http://linkedin.example.com",
+      "twitter":    "http://twitter.example.com",
+      "instagram":  "http://instagram.example.com",
+      "reddit":  "http://reddit.example.com",
+      "youtube":  "http://youtube.example.com",
+      "github":  "http://github.example.com"
+    }
+  },
+  {
+    "photo":          "http://i.pravatar.cc/350?img=25",
+    "name":           "Jane Doe",
+    "title":          "Job Title B",
+    "description":    "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>",
+    "socialMedia":    {
+      "facebook":   "http://facebook.example.com",
+      "linkedin":    "http://linkedin.example.com",
+      "twitter":    "http://twitter.example.com",
+      "instagram":  "http://instagram.example.com"
+    }
+  },
+  {
+    "photo":          "http://i.pravatar.cc/350?img=5",
+    "name":           "Mary Sue",
+    "title":          "Job Title C",
+    "description":    "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>",
+    "socialMedia":    {
+      "facebook":   "http://facebook.example.com",
+      "linkedin":    "http://linkedin.example.com",
+      "twitter":    "http://twitter.example.com",
+      "instagram":  "http://instagram.example.com"
+    }
+  }
+]

@@ -1,0 +1,71 @@
+<div class="job">
+    <div class="jumbotron text-center">
+        <div class="container">
+            <div class="row">
+                <h1 translate>CAREERS</h1>
+            </div>
+        </div>
+    </div>
+    <div class="job-content-container">
+        <div class="page-section breadcrumb-section">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a ui-sref="base" ui-sref-active="active" translate>
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="careers" ui-sref-active="active" translate>
+                                CAREERS
+                            </a>
+                        </li>
+                        <li class="active">
+                            {{job.title}}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">{{job.title}}</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <dl>
+                            <dt>{{'LOCATION' | translate}}:</dt>
+                            <dd>{{job.location}}</dd>
+                            <br/>
+                            <dt>{{'EMPLOYMENT_TYPE' | translate}}:</dt>
+                            <dd>{{job.type}}</dd>
+                            <br/>
+                            <dt>{{'CATEGORY'| translate}}:</dt>
+                            <dd>{{job.category}}</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="btn btn-default btn-primary" href="{{job.applyUrl}}" target="_blank">
+                                {{'APPLY' | translate}}
+                                <span class="sr-only" translate>OPENS_IN_NEW_WINDOW</span>
+                                <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div ng-bind-html="description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hl-contact-cta></hl-contact-cta>
+    </div>
+</div>

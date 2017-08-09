@@ -1,0 +1,11 @@
+[
+  {
+    "id":           "technical-support",
+    "title":        "Technical Support",
+    "location":     "Atlanta, GA",
+    "type":         "Part-Time",
+    "category":     "Support",
+    "applyUrl":     "http://jobs.example.com/",
+    "description":  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime."
+  }
+]

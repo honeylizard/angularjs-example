@@ -1,0 +1,11 @@
+[
+  {
+    "id":           "software-engineer",
+    "title":        "Software Engineer",
+    "location":     "Atlanta, GA",
+    "type":         "Full-Time",
+    "category":     "Technology",
+    "applyUrl":     "http://jobs.example.com/",
+    "description":  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime."
+  }
+]

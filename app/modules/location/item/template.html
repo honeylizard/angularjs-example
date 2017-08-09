@@ -1,0 +1,45 @@
+<div class="location-map" ng-if="$ctrl.googleMapUrl">
+    <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            translate-attr="{ title: 'GOOGLE_MAP_IFRAME_TITLE'}" ng-src="{{$ctrl.googleMapUrl}}">
+    </iframe>
+</div>
+<div class="thumbnail location-details">
+    <img class="img-responsive img-circle"
+         ng-src="{{$ctrl.image | trusted}}" ng-if="$ctrl.image"
+         alt="" role="presentation" />
+    <div class="caption">
+        <h3 ng-if="$ctrl.name">{{$ctrl.name}}</h3>
+        <p ng-if="$ctrl.streetAddress && $ctrl.cityStatePostCode">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            {{ 'ADDRESS' | translate }}
+            <br/>
+            {{$ctrl.streetAddress}}
+            <br/>
+            {{$ctrl.cityStatePostCode}}
+        </p>
+        <p ng-if="$ctrl.phone">
+            <a href="tel:{{$ctrl.phone}}">
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                {{ 'PHONE' | translate }}: {{$ctrl.phone}}
+            </a>
+        </p>
+        <p ng-if="$ctrl.fax">
+            <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+            {{ 'FAX' | translate }}: {{$ctrl.fax}}
+        </p>
+        <p ng-if="$ctrl.email">
+            <a href="mailto:{{$ctrl.email}}">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                {{ 'EMAIL' | translate }}: {{$ctrl.email}}
+            </a>
+        </p>
+
+        <p ng-if="$ctrl.hours">
+            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+            {{ 'OPERATING_HOURS' | translate }}: {{$ctrl.hours}}
+        </p>
+        <p ng-if="$ctrl.socialMedia">
+            <hl-social-media-list social-media-data="{{$ctrl.socialMedia}}"></hl-social-media-list>
+        </p>
+    </div>
+</div>

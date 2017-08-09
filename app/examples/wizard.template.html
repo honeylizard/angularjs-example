@@ -1,0 +1,140 @@
+<div class="wizard-example">
+    <div class="jumbotron text-center">
+        <div class="container">
+            <div class="row">
+                <h1>Wizard</h1>
+            </div>
+        </div>
+    </div>
+    <div class="wizard-example-content-container">
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header text-center">Wizard Example</h2>
+                    </div>
+                </div>
+                <div class="wizard">
+                    <div class="row">
+                        <div class="wizard-nav">
+                            <ul class="wizard-nav-row">
+                                <li class="wizard-nav-step active col-md-4" data-target="#step-1">
+                                    <a data-target="#step-1" data-toggle="tab" role="tab">
+                                        <button type="button" class="step btn btn-default btn-circle">1</button>
+                                        <p class="title">Basic information</p>
+                                    </a>
+                                </li>
+                                <li class="wizard-nav-step col-md-4" data-target="#step-2">
+                                    <a data-target="#step-2" data-toggle="tab" role="tab">
+                                        <button type="button" class="step btn btn-default btn-circle">2</button>
+                                        <p class="title">Billing</p>
+                                    </a>
+                                </li>
+                                <li class="wizard-nav-step col-md-4" data-target="#step-3">
+                                    <a data-target="#step-3" data-toggle="tab" role="tab">
+                                        <button type="button" class="step btn btn-default btn-circle">3</button>
+                                        <p class="title">Review</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wizard-pages tab-content">
+                                <div class="wizard-page tab-pane active" id="step-1">
+                                    <h3>
+                                        <strong>Step 1</strong>
+                                        -
+                                        <small>Basic Information</small>
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sed voluptate nihil eum consectetur similique?
+                                        Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet.
+                                        Odit, temporibus reprehenderit dolorum!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Et, consequuntur, modi mollitia corporias ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam?
+                                        Aut, in eum facere corrupti necessitatibus perspiciatis quis?
+                                    </p>
+                                    <ul class="list-inline pull-right">
+                                        <li>
+                                            <a class="btn btn-primary next-step" onclick="nextWizardStep();return false;" data-target="#step-2" data-toggle="tab" role="button">
+                                                Next Step
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="wizard-page tab-pane" id="step-2">
+                                    <h3>
+                                        <strong>Step 2</strong>
+                                        -
+                                        <small>Billing</small>
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sed voluptate nihil eum consectetur similique?
+                                        Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet.
+                                        Odit, temporibus reprehenderit dolorum!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Et, consequuntur, modi mollitia corporias ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam?
+                                        Aut, in eum facere corrupti necessitatibus perspiciatis quis?
+                                    </p>
+                                    <ul class="list-inline pull-right">
+                                        <li>
+                                            <a class="btn btn-default prev-step" onclick="prevWizardStep();return false;" data-target="#step-1" data-toggle="tab" role="button">
+                                                Previous Step
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-primary next-step" onclick="nextWizardStep();return false;" data-target="#step-3" data-toggle="tab" role="button">
+                                                Next Step
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="wizard-page tab-pane" id="step-3">
+                                    <h3>
+                                        <strong>Step 3</strong>
+                                        -
+                                        <small>Review</small>
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sed voluptate nihil eum consectetur similique?
+                                        Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet.
+                                        Odit, temporibus reprehenderit dolorum!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Et, consequuntur, modi mollitia corporias ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam?
+                                        Aut, in eum facere corrupti necessitatibus perspiciatis quis?
+                                    </p>
+                                    <ul class="list-inline pull-right">
+                                        <li>
+                                            <a class="btn btn-default prev-step" onclick="prevWizardStep();return false;" data-target="#step-2" data-toggle="tab" role="button">
+                                                Previous Step
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-success final-step" role="button">
+                                                Finish
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

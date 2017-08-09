@@ -1,0 +1,16 @@
+<div id="team" class="team-container container">
+    <h2 class="text-center" translate>
+        OUR_TEAM
+    </h2>
+    <div class="row" ng-repeat="teamMember in team" ng-if="$index % 3 == 0">
+        <div class="employee text-center col-md-4">
+            <hl-team-item employee-data="{{team[$index]}}" ></hl-team-item>
+        </div>
+        <div class="employee text-center col-md-4" ng-if="team.length > ($index + 1)">
+            <hl-team-item employee-data="{{team[$index + 1]}}" ></hl-team-item>
+        </div>
+        <div class="employee text-center col-md-4" ng-if="team.length > ($index + 2)">
+            <hl-team-item employee-data="{{team[$index + 2]}}" ></hl-team-item>
+        </div>
+    </div>
+</div>
