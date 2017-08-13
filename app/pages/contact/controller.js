@@ -5,29 +5,21 @@ angular
 ContactPageController.$inject = [
     '$scope',
     '$sce',
-    '$route',
-    '$translate'
+    '$translate',
+    'ContactPageService'
 ];
 
-function ContactPageController($scope, $sce, $route, $translate) {
+function ContactPageController($scope, $sce, $translate, ContactPageService) {
     // Assumption: these long passages of content come from an internal CMS system.
     // Content is written by an employee and sanitized before it gets to this point.
-    // TODO: Convert to mock data
+    ContactPageService.query(function(data){
+        var localData = data[0];
 
-    $scope.hero_message = $sce.trustAsHtml('<p>We\'re friendly and available to chat. '
-        + 'Reach out to us anytime and we\'ll happily answer your questions</p>');
+        $scope.hero_message = $sce.trustAsHtml(localData.hero_message);
+        $scope.description = $sce.trustAsHtml(localData.description);
 
-    $scope.description = $sce.trustAsHtml('<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
-        + 'Sed voluptate nihil eum consectetur similique? '
-        + 'Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. '
-        + 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>'
-        + '<p>Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. '
-        + 'Odit, temporibus reprehenderit dolorum! '
-        + 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
-        + 'Et, consequuntur, modi mollitia corporias ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? '
-        + 'Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>');
-
-    // We have a button on the jumbotron that allows users to access the product support site.
-    // This is the URL to that site.
-    $scope.productSupportURL = 'http://support.example.com';
+        // We have a button on the jumbotron that allows users to access the product support site.
+        // This is the URL to that site.
+        $scope.productSupportURL = localData.support_url;
+    });
 }

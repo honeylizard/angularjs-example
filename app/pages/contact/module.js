@@ -2,5 +2,6 @@
 angular
     .module('hlContactPage', [
         'hlLocationList', // Location List Component
-        'hlLocationItem' // Location List Item Component
+        'hlLocationItem', // Location List Item Component
+        'contact.services'
     ]);

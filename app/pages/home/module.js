@@ -2,5 +2,6 @@
 angular
     .module('hlHomePage', [
         'hlCompanyStatistics', // Company Statistics Component
-        'hlTestimonialList' // Testimonial List Component
+        'hlTestimonialList', // Testimonial List Component
+        'home.services'
     ]);

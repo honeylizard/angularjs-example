@@ -5,21 +5,17 @@ angular
 ErrorPageController.$inject = [
     '$scope',
     '$sce',
-    '$route',
-    '$translate'
+    '$translate',
+    'ErrorPageService'
 ];
 
-function ErrorPageController($scope, $sce, $route, $translate) {
+function ErrorPageController($scope, $sce, $translate, ErrorPageService) {
     // Assumption: these long passages of content come from an internal CMS system.
     // Content is written by an employee and sanitized before it gets to this point.
-    // TODO: Convert to mock data
+    ErrorPageService.query(function(data){
+        var localData = data[0];
 
-    $scope.hero_message = $sce.trustAsHtml(
-        '<p>We can\'t seem to find the page you are looking for.</p>'
-    );
-
-    $scope.description = $sce.trustAsHtml(
-        '<p>The page that you are looking for does not exist on this website. '
-        + 'You may have accidentally mistype the page address, or followed an expired link.</p>'
-    );
+        $scope.hero_message = $sce.trustAsHtml(localData.hero_message);
+        $scope.description = $sce.trustAsHtml(localData.description);
+    });
 }

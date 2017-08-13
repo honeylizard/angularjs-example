@@ -2,5 +2,6 @@
 angular
     .module('hlProductsPage', [
         'hlProductList', // Products List Component
-        'hlProductItem' // Products List Item Component
+        'hlProductItem', // Products List Item Component
+        'products.services'
     ]);

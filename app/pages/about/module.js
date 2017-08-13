@@ -4,5 +4,6 @@ angular
         'hlTeamList', // Team List Component
         'hlTeamItem', // Team List Item Component
         'hlCompanyList', // Company List Component
-        'hlCompanyItem' // Company List Item Component
+        'hlCompanyItem', // Company List Item Component
+        'about.services'
     ]);

@@ -2,5 +2,6 @@
 angular
     .module('hlCareerPage', [
         'hlJobList', // Jobs List Component
-        'hlJobDetail' // Job Details Component - Accessed via link in list
+        'hlJobDetail', // Job Details Component - Accessed via link in list
+        'careers.services'
     ]);

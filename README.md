@@ -32,8 +32,6 @@ This project includes the following features:
 
 * Convert to 'pretty' URLS and maintain refresh capabilities (See "to do" notation)
 * Paginate the job postings (See "to do" notation)
-* Move the page content (e.g. long passages) to mock-data JSON files (See "to do" notation)
-* Move Job Categories and Employment Types to mock-data JSON files (See "to do" notation)
 * Replace any 'data' bindings from full json to id only service requests (See "to do" notation)
 * A CMS to maintain the mock-data
 
@@ -90,5 +88,13 @@ Source: [https://www.pexels.com](https://www.pexels.com)
 
 * Initial release
 * Released: August 9, 2017
+
+### 1.1
+
+* Moved the page content (e.g. long passages) to mock-data JSON files
+* Moved Job Categories and Employment Types to mock-data JSON files
+* Fixed minor translation issue in career page's breadcrumbs
+* Released: August 12, 2017
+
 
 
