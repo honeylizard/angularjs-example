@@ -4,65 +4,23 @@ angular
 
 JobListController.$inject = [
     '$scope',
-    'JobsService'
+    'JobsService',
+    'JobFiltersService'
 ];
 
 // TODO: Paginate the hlJobList
-function JobListController($scope, JobsService) {
+function JobListController($scope, JobsService, JobFiltersService) {
     $scope.listItems = []; //declare an empty array
 
-    // Default list of employment types for jobs
-    $scope.employmentTypes = [
-        {
-            name:'Full-Time',
-            slug: 'full-time',
-            toggle: true
-        },
-        {
-            name:'Part-Time',
-            slug: 'part-time',
-            toggle: true
-        },
-        {
-            name:'Contract',
-            slug: 'contract',
-            toggle: true
-        },
-        {
-            name:'Internship',
-            slug: 'internship',
-            toggle: true
-        }
-    ];
+    JobFiltersService.query(function(data){
+        var localData = data[0];
 
-    // Default list of job categories for jobs
-    $scope.categories = [
-        {
-            name: 'Information Technology',
-            slug: 'information-technology',
-            toggle: true
-        },
-        {
-            name: 'Technology',
-            slug: 'technology',
-            toggle: true
-        },
-        {
-            name: 'Support',
-            slug: 'support',
-            toggle: true
-        },
-        {
-            name: 'Sales & Marketing',
-            slug: 'sales-marketing',
-            toggle: true
-        },
-        {
-            name: 'Finance',
-            slug: 'finance',
-            toggle: true
-        }
-    ];
+        // Default list of employment types for jobs
+        $scope.employmentTypes = localData.employment_types;
+
+        // Default list of job categories for jobs
+        $scope.categories = localData.categories;
+    });
 
     this.employmentTypeFilter = function(job) {
         for (type in $scope.employmentTypes) {

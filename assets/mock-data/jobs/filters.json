@@ -1,0 +1,53 @@
+[
+  {
+    "employment_types" : [
+      {
+        "name" : "Full-Time",
+        "slug" : "full-time",
+        "toggle" : true
+      },
+      {
+        "name" :"Part-Time",
+        "slug" : "part-time",
+        "toggle" : true
+      },
+      {
+        "name" :"Contract",
+        "slug" : "contract",
+        "toggle" : true
+      },
+      {
+        "name" :"Internship",
+        "slug" : "internship",
+        "toggle" : true
+      }
+    ],
+    "categories" : [
+      {
+        "name" : "Information Technology",
+        "slug" : "information-technology",
+        "toggle" : true
+      },
+      {
+        "name" : "Technology",
+        "slug" : "technology",
+        "toggle" : true
+      },
+      {
+        "name" : "Support",
+        "slug" : "support",
+        "toggle" : true
+      },
+      {
+        "name" : "Sales & Marketing",
+        "slug" : "sales-marketing",
+        "toggle" : true
+      },
+      {
+        "name" : "Finance",
+        "slug" : "finance",
+        "toggle" : true
+      }
+    ]
+  }
+]
