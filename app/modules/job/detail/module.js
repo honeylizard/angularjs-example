@@ -2,5 +2,7 @@
 angular
     .module('hlJobDetail', [
         'ngRoute',
-        'job.services' // Job Service
+        'job.services', // Job Service
+        'core.services',
+        'detail.services'
     ]);

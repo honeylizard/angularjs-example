@@ -2,5 +2,7 @@
 angular
     .module('hlProductDetail', [
         'ngRoute',
-        'product.services' // Product Service
+        'product.services', // Product Service
+        'core.services',
+        'detail.services'
     ]);
